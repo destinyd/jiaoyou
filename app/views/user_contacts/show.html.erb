@@ -1,0 +1,23 @@
+<p>
+  <b>Realname:</b>
+  <%=h @user_contact.realname %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%=h @user_contact.telephone %>
+</p>
+
+<p>
+  <b>Qq:</b>
+  <%=h @user_contact.qq %>
+</p>
+
+<p>
+  <b>Msn:</b>
+  <%=h @user_contact.MSN %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_contact_path(@user_contact) %> |
+<%= link_to 'Back', user_contacts_path %>

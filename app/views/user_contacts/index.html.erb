@@ -1,0 +1,26 @@
+<h1>Listing user_contacts</h1>
+
+<table>
+  <tr>
+    <th>Realname</th>
+    <th>Telephone</th>
+    <th>Qq</th>
+    <th>Msn</th>
+  </tr>
+
+<% @user_contacts.each do |user_contact| %>
+  <tr>
+    <td><%=h user_contact.realname %></td>
+    <td><%=h user_contact.telephone %></td>
+    <td><%=h user_contact.qq %></td>
+    <td><%=h user_contact.MSN %></td>
+    <td><%= link_to 'Show', user_contact %></td>
+    <td><%= link_to 'Edit', edit_user_contact_path(user_contact) %></td>
+    <td><%= link_to 'Destroy', user_contact, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New user_contact', new_user_contact_path %>

@@ -1,0 +1,52 @@
+<h1>Editing user_detail</h1>
+
+<% form_for(@user_detail) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname %>
+  </p>
+  <p>
+    <%= f.label :sex %><br />
+    <%= f.text_field :sex %>
+  </p>
+  <p>
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </p>
+  <p>
+    <%= f.label :birthday %><br />
+    <%= f.datetime_select :birthday %>
+  </p>
+  <p>
+    <%= f.label :married %><br />
+    <%= f.check_box :married %>
+  </p>
+  <p>
+    <%= f.label :education %><br />
+    <%= f.text_field :education %>
+  </p>
+  <p>
+    <%= f.label :monthly %><br />
+    <%= f.text_field :monthly %>
+  </p>
+  <p>
+    <%= f.label :job %><br />
+    <%= f.text_field :job %>
+  </p>
+  <p>
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @user_detail %> |
+<%= link_to 'Back', user_details_path %>

@@ -1,0 +1,28 @@
+<h1>Editing user_contact</h1>
+
+<% form_for(@user_contact) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :realname %><br />
+    <%= f.text_field :realname %>
+  </p>
+  <p>
+    <%= f.label :telephone %><br />
+    <%= f.text_field :telephone %>
+  </p>
+  <p>
+    <%= f.label :qq %><br />
+    <%= f.text_field :qq %>
+  </p>
+  <p>
+    <%= f.label :MSN %><br />
+    <%= f.text_field :MSN %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @user_contact %> |
+<%= link_to 'Back', user_contacts_path %>

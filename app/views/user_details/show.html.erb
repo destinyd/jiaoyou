@@ -1,0 +1,53 @@
+<p>
+  <b>Nickname:</b>
+  <%=h @user_detail.nickname %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%=h @user_detail.sex %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @user_detail.height %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%=h @user_detail.birthday %>
+</p>
+
+<p>
+  <b>Married:</b>
+  <%=h @user_detail.married %>
+</p>
+
+<p>
+  <b>Education:</b>
+  <%=h @user_detail.education %>
+</p>
+
+<p>
+  <b>Monthly:</b>
+  <%=h @user_detail.monthly %>
+</p>
+
+<p>
+  <b>Job:</b>
+  <%=h @user_detail.job %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @user_detail.notes %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @user_detail.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_detail_path(@user_detail) %> |
+<%= link_to 'Back', user_details_path %>

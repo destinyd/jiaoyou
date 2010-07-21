@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nickname: MyString
+  sex: MyString
+  height: 1
+  birthday: 2010-07-20 21:22:13
+  married: false
+  education: MyString
+  monthly: MyString
+  job: MyString
+  notes: MyText
+  user_id: 1
+
+two:
+  nickname: MyString
+  sex: MyString
+  height: 1
+  birthday: 2010-07-20 21:22:13
+  married: false
+  education: MyString
+  monthly: MyString
+  job: MyString
+  notes: MyText
+  user_id: 1

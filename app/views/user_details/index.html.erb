@@ -1,0 +1,38 @@
+<h1>Listing user_details</h1>
+
+<table>
+  <tr>
+    <th>Nickname</th>
+    <th>Sex</th>
+    <th>Height</th>
+    <th>Birthday</th>
+    <th>Married</th>
+    <th>Education</th>
+    <th>Monthly</th>
+    <th>Job</th>
+    <th>Notes</th>
+    <th>User</th>
+  </tr>
+
+<% @user_details.each do |user_detail| %>
+  <tr>
+    <td><%=h user_detail.nickname %></td>
+    <td><%=h user_detail.sex %></td>
+    <td><%=h user_detail.height %></td>
+    <td><%=h user_detail.birthday %></td>
+    <td><%=h user_detail.married %></td>
+    <td><%=h user_detail.education %></td>
+    <td><%=h user_detail.monthly %></td>
+    <td><%=h user_detail.job %></td>
+    <td><%=h user_detail.notes %></td>
+    <td><%=h user_detail.user_id %></td>
+    <td><%= link_to 'Show', user_detail %></td>
+    <td><%= link_to 'Edit', edit_user_detail_path(user_detail) %></td>
+    <td><%= link_to 'Destroy', user_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New user_detail', new_user_detail_path %>
